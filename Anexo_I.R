@@ -57,7 +57,7 @@ for(i in colnames(GNANOVA[,3:10])){
   }
 }
 
-#Test Levene
+#Test Levene para observar equidad de varianza
 
 for(i in colnames(GNANOVA[,3:10])){
   fracciones<-names(GNANOVA[i])
@@ -78,7 +78,7 @@ for(i in colnames(GNANOVA[,3:10])){
   print("---------")
 }
 
-# Test ANOVA y Tukey
+# Test ANOVA y Tukey para observar variación significativa
 
 for (i in colnames(GNANOVA[, 3:10])) {
   fracciones<-names(GNANOVA[i])
