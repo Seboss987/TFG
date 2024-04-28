@@ -69,7 +69,7 @@ ggplot(DataGG,aes(Type, Quantity)) +
                                             .default=label_parsed)) +
   stat_summary(geom = "text", fun = mean, label = trimws(Ltsg_df$.group), aes(y = 0), 
                size = 2.5) +
-  labs(x = Uso~de~suelo, y = nmol~FAME~g^{-1}~suelo) +
+  labs(x = Uso~de~suelo, y = nmol~FAME~g^{-1}~suelo, fill = "Uso de Suelo") +
   theme_bw(base_size = 8.5) +
   scale_fill_brewer(palette="Dark2")
 
