@@ -9,8 +9,10 @@ install.packages("emmeans")
 library(emmeans)
 install.packages("tidyverse")
 library(tidyverse)
+install.packages("dplyr")
+library(dplyr)
 
-#Preparar dataframe a usar
+#Preparar dataframe a usar en ANOVA y Tukey
 
 DataGG <- GNANOVA
 
