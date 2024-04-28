@@ -110,21 +110,21 @@ for (i in colnames(GNANOVA[, 3:10])) {
 
 # Calculo de Medianas para la tabla de resultados
 
-NMedian <- GNANOVA[GNANOVA$Type == 'Natural',]
+NMedian <- GNANOVA[GNANOVA$Type == "Natural",]
 NMV <- c(median(NMedian$Total), median(NMedian$GramP),
          median(NMedian$GramN), median(NMedian$RatioGPGN), 
          median(NMedian$Bacteria), median(NMedian$Actino),
          median(NMedian$Fungi), median(NMedian$RatioFB))
 print(NMV)
 
-MMedian <- GNANOVA[GNANOVA$Type == 'Maize',]
+MMedian <- GNANOVA[GNANOVA$Type == "Maize",]
 MMV <- c(median(MMedian$Total), median(MMedian$GramP),
          median(MMedian$GramN), median(MMedian$RatioGPGN), 
          median(MMedian$Bacteria), median(MMedian$Actino),
          median(MMedian$Fungi), median(MMedian$RatioFB))
 print(MMV)
 
-PMedian <- GNANOVA[GNANOVA$Type == 'Potato',]
+PMedian <- GNANOVA[GNANOVA$Type == "Potato",]
 PMV <- c(median(PMedian$Total), median(PMedian$GramP),
          median(PMedian$GramN), median(PMedian$RatioGPGN), 
          median(PMedian$Bacteria), median(PMedian$Actino),
@@ -132,35 +132,35 @@ PMV <- c(median(PMedian$Total), median(PMedian$GramP),
 print(PMV)
 median(PMedian$RatioGPGN)
 
-FRMedian <- GNANOVA[GNANOVA$Country == 'France',]
+FRMedian <- GNANOVA[GNANOVA$Country == "France",]
 FRMV <- c(median(FRMedian$Total), median(FRMedian$GramP),
           median(FRMedian$GramN), median(FRMedian$RatioGPGN), 
           median(FRMedian$Bacteria), median(FRMedian$Actino),
           median(FRMedian$Fungi), median(FRMedian$RatioFB))
 print(FRMV)
 
-ITMedian <- GNANOVA[GNANOVA$Country == 'Italy',]
+ITMedian <- GNANOVA[GNANOVA$Country == "Italy",]
 ITMV <- c(median(ITMedian$Total), median(ITMedian$GramP),
           median(ITMedian$GramN), median(ITMedian$RatioGPGN), 
           median(ITMedian$Bacteria), median(ITMedian$Actino),
           median(ITMedian$Fungi), median(ITMedian$RatioFB))
 print(ITMV)
 
-PLMedian <- GNANOVA[GNANOVA$Country == 'Poland',]
+PLMedian <- GNANOVA[GNANOVA$Country == "Poland",]
 PLMV <- c(median(PLMedian$Total), median(PLMedian$GramP),
           median(PLMedian$GramN), median(PLMedian$RatioGPGN), 
           median(PLMedian$Bacteria), median(PLMedian$Actino),
           median(PLMedian$Fungi), median(PLMedian$RatioFB))
 print(PLMV)
 
-PTMedian <- GNANOVA[GNANOVA$Country == 'Portugal',]
+PTMedian <- GNANOVA[GNANOVA$Country == "Portugal",]
 PTMV <- c(median(PTMedian$Total), median(PTMedian$GramP),
           median(PTMedian$GramN), median(PTMedian$RatioGPGN), 
           median(PTMedian$Bacteria), median(PTMedian$Actino),
           median(PTMedian$Fungi), median(PTMedian$RatioFB))
 print(PTMV)
 
-SPMedian <- GNANOVA[GNANOVA$Country == 'Spain',]
+SPMedian <- GNANOVA[GNANOVA$Country == "Spain",]
 SPMV <- c(median(SPMedian$Total), median(SPMedian$GramP),
           median(SPMedian$GramN), median(SPMedian$RatioGPGN), 
           median(SPMedian$Bacteria), median(SPMedian$Actino),
